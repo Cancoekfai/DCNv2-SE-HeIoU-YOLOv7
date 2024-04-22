@@ -1,0 +1,215 @@
+2023-06-01 13:34:19,847 INFO    MainThread:25036 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Lenovo\.config\wandb\settings
+2023-06-01 13:34:19,847 INFO    MainThread:25036 [wandb_setup.py:_flush():76] Loading settings from E:\Desktop\HZK-Code\mymodel-v7(HeIou+se+dcnv2)\wandb\settings
+2023-06-01 13:34:19,847 INFO    MainThread:25036 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-01 13:34:19,847 INFO    MainThread:25036 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'E:\\Desktop\\HZK-Code\\mymodel-v7(HeIou+se+dcnv2)\\train.py'}
+2023-06-01 13:34:19,847 INFO    MainThread:25036 [wandb_init.py:_log_setup():428] Logging user logs to E:\Desktop\HZK-Code\mymodel-v7(HeIou+se+dcnv2)\wandb\run-20230601_133419-3t9sgary\logs\debug.log
+2023-06-01 13:34:19,847 INFO    MainThread:25036 [wandb_init.py:_log_setup():429] Logging internal logs to E:\Desktop\HZK-Code\mymodel-v7(HeIou+se+dcnv2)\wandb\run-20230601_133419-3t9sgary\logs\debug-internal.log
+2023-06-01 13:34:19,848 INFO    MainThread:25036 [wandb_init.py:init():462] calling init triggers
+2023-06-01 13:34:19,848 INFO    MainThread:25036 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov7.pt', 'cfg': 'cfg/training/yolov7.yaml', 'data': 'data/mydata.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.3, 'cls_pw': 1.0, 'obj': 0.7, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.2, 'scale': 0.9, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.15, 'copy_paste': 0.0, 'paste_in': 0.15, 'loss_ota': 1}, 'epochs': 100, 'batch_size': 8, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'freeze': [0], 'v5_metric': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs\\train\\exp', 'total_batch_size': 8}
+2023-06-01 13:34:19,848 INFO    MainThread:25036 [wandb_init.py:init():515] starting backend
+2023-06-01 13:34:19,848 INFO    MainThread:25036 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2023-06-01 13:34:19,850 INFO    MainThread:25036 [backend.py:ensure_launched():217] starting backend process...
+2023-06-01 13:34:20,028 INFO    MainThread:25036 [backend.py:ensure_launched():222] started backend process with pid: 17292
+2023-06-01 13:34:20,029 INFO    MainThread:25036 [wandb_init.py:init():525] backend started and connected
+2023-06-01 13:34:20,033 INFO    MainThread:25036 [wandb_init.py:init():596] updated telemetry
+2023-06-01 13:34:20,035 INFO    MainThread:25036 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2023-06-01 13:34:24,341 INFO    MainThread:25036 [wandb_run.py:_on_init():1924] communicating current version
+2023-06-01 13:34:24,593 INFO    MainThread:25036 [wandb_run.py:_on_init():1928] got version response upgrade_message: "wandb version 0.15.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-06-01 13:34:24,593 INFO    MainThread:25036 [wandb_init.py:init():662] starting run threads in backend
+2023-06-01 13:34:29,606 INFO    MainThread:25036 [wandb_run.py:_console_start():1898] atexit reg
+2023-06-01 13:34:29,607 INFO    MainThread:25036 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.WRAP
+2023-06-01 13:34:29,607 INFO    MainThread:25036 [wandb_run.py:_redirect():1808] Wrapping output streams.
+2023-06-01 13:34:29,610 INFO    MainThread:25036 [wandb_run.py:_redirect():1832] Redirects installed.
+2023-06-01 13:34:29,610 INFO    MainThread:25036 [wandb_init.py:init():688] run started, returning control to user process
+2023-06-01 13:34:29,611 INFO    MainThread:25036 [wandb_config.py:__setitem__():150] config set opt = {'weights': 'yolov7.pt', 'cfg': 'cfg/training/yolov7.yaml', 'data': 'data/mydata.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.3, 'cls_pw': 1.0, 'obj': 0.7, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.2, 'scale': 0.9, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.15, 'copy_paste': 0.0, 'paste_in': 0.15, 'loss_ota': 1}, 'epochs': 100, 'batch_size': 8, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'freeze': [0], 'v5_metric': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs\\train\\exp', 'total_batch_size': 8} - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000293B8795490>>
+2023-06-01 13:34:29,611 INFO    MainThread:25036 [wandb_run.py:_config_callback():1136] config_cb opt {'weights': 'yolov7.pt', 'cfg': 'cfg/training/yolov7.yaml', 'data': 'data/mydata.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.3, 'cls_pw': 1.0, 'obj': 0.7, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.2, 'scale': 0.9, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.15, 'copy_paste': 0.0, 'paste_in': 0.15, 'loss_ota': 1}, 'epochs': 100, 'batch_size': 8, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'freeze': [0], 'v5_metric': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs\\train\\exp', 'total_batch_size': 8} None
+2023-06-01 13:34:29,611 INFO    MainThread:25036 [wandb_config.py:__setitem__():150] config set data_dict = {'train': 'data/train/images', 'val': 'data/valid/images', 'test': 'data/test/images', 'nc': 114, 'names': ['3+2-2', '3-2-2', '3jia2', 'aerbeisi', 'anmuxi', 'aoliao', 'asamu', 'baicha', 'baishikele', 'baishikele-2', 'baokuangli', 'binghongcha', 'bingqilinniunai', 'bingtangxueli', 'buding', 'chacui', 'chapai', 'chapai2', 'damaicha', 'daofandian1', 'daofandian2', 'daofandian3', 'daofandian4', 'dongpeng', 'dongpeng-b', 'fenda', 'gudasao', 'guolicheng', 'guolicheng2', 'haitai', 'haochidian', 'haoliyou', 'heweidao', 'heweidao2', 'heweidao3', 'hongniu', 'hongniu2', 'hongshaoniurou', 'jianjiao', 'jianlibao', 'jindian', 'kafei', 'kaomo_gali', 'kaomo_jiaoyan', 'kaomo_shaokao', 'kaomo_xiangcon', 'kebike', 'kele', 'kele-b', 'kele-b-2', 'laotansuancai', 'liaomian', 'libaojian', 'lingdukele', 'lingdukele-b', 'liziyuan', 'lujiaoxiang', 'lujikafei', 'luxiangniurou', 'maidong', 'mangguoxiaolao', 'meiniye', 'mengniu', 'mengniuzaocan', 'moliqingcha', 'nfc', 'niudufen', 'niunai', 'nongfushanquan', 'qingdaowangzi-1', 'qingdaowangzi-2', 'qinningshui', 'quchenshixiangcao', 'rancha-1', 'rancha-2', 'rousongbing', 'rusuanjunqishui', 'suanlafen', 'suanlaniurou', 'taipingshuda', 'tangdaren', 'tangdaren2', 'tangdaren3', 'ufo', 'ufo2', 'wanglaoji', 'wanglaoji-c', 'wangzainiunai', 'weic', 'weitanai', 'weitanai2', 'weitanaiditang', 'weitaningmeng', 'weitaningmeng-bottle', 'weiweidounai', 'wuhounaicha', 'wulongcha', 'xianglaniurou', 'xianguolao', 'xianxiayuban', 'xuebi', 'xuebi-b', 'xuebi2', 'yezhi', 'yibao', 'yida', 'yingyangkuaixian', 'yitengyuan', 'youlemei', 'yousuanru', 'youyanggudong', 'yuanqishui', 'zaocanmofang', 'zihaiguo']} - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x00000293B8795490>>
+2023-06-01 13:34:29,612 INFO    MainThread:25036 [wandb_run.py:_config_callback():1136] config_cb data_dict {'train': 'data/train/images', 'val': 'data/valid/images', 'test': 'data/test/images', 'nc': 114, 'names': ['3+2-2', '3-2-2', '3jia2', 'aerbeisi', 'anmuxi', 'aoliao', 'asamu', 'baicha', 'baishikele', 'baishikele-2', 'baokuangli', 'binghongcha', 'bingqilinniunai', 'bingtangxueli', 'buding', 'chacui', 'chapai', 'chapai2', 'damaicha', 'daofandian1', 'daofandian2', 'daofandian3', 'daofandian4', 'dongpeng', 'dongpeng-b', 'fenda', 'gudasao', 'guolicheng', 'guolicheng2', 'haitai', 'haochidian', 'haoliyou', 'heweidao', 'heweidao2', 'heweidao3', 'hongniu', 'hongniu2', 'hongshaoniurou', 'jianjiao', 'jianlibao', 'jindian', 'kafei', 'kaomo_gali', 'kaomo_jiaoyan', 'kaomo_shaokao', 'kaomo_xiangcon', 'kebike', 'kele', 'kele-b', 'kele-b-2', 'laotansuancai', 'liaomian', 'libaojian', 'lingdukele', 'lingdukele-b', 'liziyuan', 'lujiaoxiang', 'lujikafei', 'luxiangniurou', 'maidong', 'mangguoxiaolao', 'meiniye', 'mengniu', 'mengniuzaocan', 'moliqingcha', 'nfc', 'niudufen', 'niunai', 'nongfushanquan', 'qingdaowangzi-1', 'qingdaowangzi-2', 'qinningshui', 'quchenshixiangcao', 'rancha-1', 'rancha-2', 'rousongbing', 'rusuanjunqishui', 'suanlafen', 'suanlaniurou', 'taipingshuda', 'tangdaren', 'tangdaren2', 'tangdaren3', 'ufo', 'ufo2', 'wanglaoji', 'wanglaoji-c', 'wangzainiunai', 'weic', 'weitanai', 'weitanai2', 'weitanaiditang', 'weitaningmeng', 'weitaningmeng-bottle', 'weiweidounai', 'wuhounaicha', 'wulongcha', 'xianglaniurou', 'xianguolao', 'xianxiayuban', 'xuebi', 'xuebi-b', 'xuebi2', 'yezhi', 'yibao', 'yida', 'yingyangkuaixian', 'yitengyuan', 'youlemei', 'yousuanru', 'youyanggudong', 'yuanqishui', 'zaocanmofang', 'zihaiguo']} None
+2023-06-01 13:36:44,088 INFO    MainThread:25036 [wandb_run.py:_atexit_cleanup():1867] got exitcode: 1
+2023-06-01 13:36:44,284 INFO    MainThread:25036 [wandb_run.py:_restore():1839] restore
+2023-06-01 13:36:44,836 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 546
+}
+
+2023-06-01 13:36:44,996 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 546
+}
+
+2023-06-01 13:36:45,587 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 546
+}
+
+2023-06-01 13:36:45,696 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:45,804 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:45,913 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,020 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,129 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 546
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,238 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 36318
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,347 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 36318
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,457 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 53331
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,563 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 53331
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,671 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,778 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,888 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:46,994 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:47,102 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:47,210 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:47,318 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:47,426 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:48,423 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+
+2023-06-01 13:36:49,600 INFO    MainThread:25036 [wandb_run.py:_on_finish():1996] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 64944
+  total_bytes: 64944
+}
+local_info {
+}
+
+2023-06-01 13:36:51,486 INFO    MainThread:25036 [wandb_run.py:_footer_history_summary_info():3104] rendering history
+2023-06-01 13:36:51,486 INFO    MainThread:25036 [wandb_run.py:_footer_history_summary_info():3136] rendering summary
+2023-06-01 13:36:51,501 INFO    MainThread:25036 [wandb_run.py:_footer_sync_info():3060] logging synced files
